@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFriends</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+        /* font */
+        .pretendard {
+            font-family: "Pretendard Variable";
+        }
+        body {
+            font-size: 14pt;
+        }
+        li {
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            color: #FF4800;
+        }
+        .clear {
+            clear: both;
+        }
+        header {
+            width: 100%;
+            height: 130px;
+            margin: 0 auto;
+        }
+        #logo {
+            float: left;
+            margin: 50px 0 0 80px;
+            font-size: 20pt;
+            font-weight: 800;
+            letter-spacing: -1px;
+            
+        }
+        #menus {
+            float: right;
+            margin: 55px 80px 0 0;
+        }
+        #main_menu {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            color: #FF4800;
+        }
+        #main_menu li {
+            display: inline;
+            margin-left: 80px;
+        }
+        #main_menu .a {
+            text-decoration: none;
+            color: #FF4800;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+        #main_menu .a:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background-color: #FF4800; /* 바 색상*/
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+        #main_menu .a:hover {
+            color: #FF4800;
+        }
+        #main_menu .a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+        #main_menu .a.active:after {
+            width: 100%;
+            left: 0;
+        }
+
+        .horizontal-line {
+            border-top: 3.5px solid #FF4800; /* 선의 두께와 색상을 지정 */
+            width: 95%; /* 가로 선의 길이를 조절할 수 있습니다. */
+            margin: 0 auto; /* 선을 가운데 정렬합니다. */
+        }
+
+        
+        /*콘텐츠 내용 작성*/
+        #contents {
+            width: 100%;
+            height: 100%;
+            margin: 80px 0 140px 0;
+        }
+        #main_contents {
+            width: 100%;
+            float: left;
+        }
+        #main_text {
+            margin: 260px 0 0 70px;
+            font-size: 300px;
+            font-weight: 800;
+            letter-spacing: -10px;
+            line-height: 300px;
+        }
+        #main_contents p {
+            float: right;
+            margin: 0 60px 0 0;
+            font-size: 700px;
+            font-weight: 350;
+        }
+        /*푸터*/
+        footer {
+            width: 100%;
+            height: 150px;
+            bottom: 0;
+            background-color: black;
+        }
+        #footer_box {
+            width: 100%;
+            height: 150px;
+            margin: 0 auto;
+        }
+        #footer_logo {
+            float: left;
+            margin: 50px 0 0 70px;
+        }
+        #address {
+            float: right;
+            margin: 50px 70px 0 0;
+            color: #FF4800;
+            font-size: 12pt;
+            text-align: right;
+        }
+        table, tr, th, td {
+            border: solid 1px rgb(255, 255, 255);
+            border-collapse: collapse;
+            padding: 8px;
+            margin: auto;
+            color: rgb(38, 38, 38);
+        }
+        #in {
+            font-size: 160px;
+            font-weight: 700;
+            color: #FF4800;
+        }
+        #ys {
+            font-size: 160px;
+            font-weight: 700;
+            color: #FF4800;
+        }
+    </style>
+</head>
+<body class="pretendard">
+    <header>
+        <div id="logo">
+            <a href="index.html" style="font-weight: 800;">Myfriends</a>
+           <!--<img src="img/logo.png">-->
+        </div>
+
+        <nav id="menus">
+        <ul id="main_menu">
+            <li><a href="jeongwoo.html" class="a" style="font-weight: 700;">jeongwoo</a></li>
+            <li><a href="jaehoon.html" class="a" style="font-weight: 700;">jaehoon</a></li>
+            <li><a href="minji.html" class="a" style="font-weight: 700;">minji</a></li>
+            <li><a href="yunsol.html" class="a active" style="font-weight: 700;">yunsol</a></li>
+            <li><a href="gallery.html" class="a" style="font-weight: 700;">gallery</a></li>
+        </ul>
+        </nav>
+    </header>
+    
+    <div class="horizontal-line"></div>
+
+<section id="contents">
+    <div>
+        <table>
+            <tr>
+                <td rowspan="2">
+                    <img src="img/ys.png">
+                </td>
+                <td colspan="2">
+                    <div id="ys">
+                    Jo Yun Sol
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 120px 0 0 0;">
+                    <img src="img/yss.png">
+                </td>
+                <td style="padding: 150px 0 0 70px;">
+                    이름 : 조윤솔<br>
+                    생년월일 : 2004.06.06<br>
+                    별명 : 윤솔뭔솔<br>
+                    MBTI : ISTP<br>
+                    인스타 : yunsol_j<br>
+                    이메일 : yunsoljo09@gmail.com<br>
+                    자격증 : 파워포인트, 한글<br><br>
+
+                    취미 : 그림그리기, 사부작거리기<br>
+                    좋아하는 것 : 치이카와<br>
+                    싫어하는 것 : 비위생적<br><br>
+
+                    초등학교 : 서울둔촌초등학교 졸업<br>
+                    중학교 : 서울성내중학교 졸업<br>
+                    고등학교 : 서울미술고등학교 졸업
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="in">Introduction</div><br>
+                    계원예대에 들어와 친해지게 된 친구 ‘조윤솔’<br>
+                    첫 수업날 내게 먼저 말 걸어준 친구!<br>
+                    역시가 신입생 OT 뒷풀이 자리에서 친해졌다 ㅎㅎ. 귀여운걸 엄청 좋아한다.<br>
+                    그래서 그런가? 윤솔이도 되게 귀여운 친구이다. Mbti가 T인데, 뭐랄까<br>
+                    F들을 다 간파한 T? 절대 다른 사람에게 선 넘지 않고 자제력?이 좋은 친구다.<br>
+                    그리고 엄청난 쩝쩝박사이다!! 윤솔이가 먹자고 하는 음식들은 하나같이 다<br>
+                    엄청 맛있다 ㅎㅎ 맛잘알 조윤솔. 같이 술마시면 진짜 재밌있다.<br>
+
+                </td>
+                <td style="padding: 60px 0 0 0;">
+                    <img src="img/ysss.png">
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<footer>
+    <div id="footer_box">
+        <div id="footer_logo">
+        <img src="img/logo2.png">
+        </div>
+        <ul id="address">
+            <li>디지털미디어디자인과 웹퍼블리싱 직무수행능력평가 2</li>
+            <li>22361024 김연우 | Email : dusdnduswo@naver.com</li>
+            <li>COPYRIGHT &copy; yeonwoo ALL RIGHTS RESERVED</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

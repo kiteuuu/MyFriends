@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFriends</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+        /* font */
+        .pretendard {
+            font-family: "Pretendard Variable";
+        }
+        body {
+            font-size: 14pt;
+            background-color: #FF4800;
+            color: black;
+        }
+        li {
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+        .clear {
+            clear: both;
+        }
+        header {
+            width: 100%;
+            height: 130px;
+            margin: 0 auto;
+        }
+        #logo {
+            float: left;
+            margin: 50px 0 0 80px;
+            font-size: 20pt;
+            font-weight: 800;
+            letter-spacing: -1px;
+            
+        }
+        #menus {
+            float: right;
+            margin: 55px 80px 0 0;
+        }
+        #main_menu {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            color: black;
+        }
+        #main_menu li {
+            display: inline;
+            margin-left: 80px;
+        }
+        #main_menu .a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+        #main_menu .a:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background-color: #000000; /* 바 색상*/
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+        #main_menu .a:hover {
+            color: #000000;
+        }
+        #main_menu .a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+
+        .horizontal-line {
+            border-top: 3.5px solid black; /* 선의 두께와 색상을 지정 */
+            width: 95%; /* 가로 선의 길이를 조절할 수 있습니다. */
+            margin: 0 auto; /* 선을 가운데 정렬합니다. */
+        }
+
+        /*콘텐츠 내용 작성*/
+        #contents {
+            width: 100%;
+            height: 865px;
+        }
+        #main_contents {
+            width: 100%;
+            float: left;
+        }
+        #main_text {
+            margin: 220px 0 0 70px;
+            font-size: 300px;
+            font-weight: 800;
+            letter-spacing: -10px;
+            line-height: 300px;
+        }
+        #main_contents p {
+            float: right;
+            margin: 0 60px 0 0;
+            font-size: 700px;
+            font-weight: 350;
+        }
+        /*푸터*/
+        footer {
+            width: 100%;
+            height: 150px;
+            margin-top: 70px;
+            background-color: black;
+        }
+        #footer_box {
+            width: 100%;
+            height: 150px;
+            margin: 0 auto;
+        }
+        #footer_logo {
+            float: left;
+            margin: 50px 0 0 70px;
+        }
+        #address {
+            float: right;
+            margin: 50px 70px 0 0;
+            color: #FF4800;
+            font-size: 12pt;
+            text-align: right;
+        }
+    </style>
+</head>
+<body class="pretendard">
+    <header>
+        <div id="logo">
+            <a href="index.html" style="font-weight: 800;">Myfriends</a>
+           <!--<img src="img/logo.png">-->
+        </div>
+
+        <nav id="menus">
+        <ul id="main_menu">
+            <li><a href="jeongwoo.html" class="a active" style="font-weight: 700;">jeongwoo</a></li>
+            <li><a href="jaehoon.html" class="a" style="font-weight: 700;">jaehoon</a></li>
+            <li><a href="minji.html" class="a" style="font-weight: 700;">minji</a></li>
+            <li><a href="yunsol.html" class="a" style="font-weight: 700;">yunsol</a></li>
+            <li><a href="gallery.html" class="a" style="font-weight: 700;">gallery</a></li>
+        </nav>
+    </header>
+    <div class="horizontal-line"></div>
+
+<section id="contents">
+<div id="main_contents">
+    <p>*</p>
+    <div id="main_text">
+    My<br>Friends
+    </div>
+</div>
+</section>
+
+<footer>
+    <div id="footer_box">
+        <div id="footer_logo">
+        <img src="img/logo2.png">
+        </div>
+        <ul id="address">
+            <li>디지털미디어디자인과 웹퍼블리싱 직무수행능력평가 2</li>
+            <li>22361024 김연우 | Email : dusdnduswo@naver.com</li>
+            <li>COPYRIGHT &copy; yeonwoo ALL RIGHTS RESERVED</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

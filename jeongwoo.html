@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFriends</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+        /* font */
+        .pretendard {
+            font-family: "Pretendard Variable";
+        }
+        body {
+            font-size: 14pt;
+        }
+        li {
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            color: #FF4800;
+        }
+        .clear {
+            clear: both;
+        }
+        header {
+            width: 100%;
+            height: 130px;
+            margin: 0 auto;
+        }
+        #logo {
+            float: left;
+            margin: 50px 0 0 80px;
+            font-size: 20pt;
+            font-weight: 800;
+            letter-spacing: -1px;
+            
+        }
+        #menus {
+            float: right;
+            margin: 55px 80px 0 0;
+        }
+        #main_menu {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            color: #FF4800;
+        }
+        #main_menu li {
+            display: inline;
+            margin-left: 80px;
+        }
+        #main_menu .a {
+            text-decoration: none;
+            color: #FF4800;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+        #main_menu .a:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background-color: #FF4800; /* 바 색상*/
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+        #main_menu .a:hover {
+            color: #FF4800;
+        }
+        #main_menu .a:hover:after {
+            width: 100%;
+            left: 0;
+        }
+        #main_menu .a.active:after {
+            width: 100%;
+            left: 0;
+        }
+
+        .horizontal-line {
+            border-top: 3.5px solid #FF4800; /* 선의 두께와 색상을 지정 */
+            width: 95%; /* 가로 선의 길이를 조절할 수 있습니다. */
+            margin: 0 auto; /* 선을 가운데 정렬합니다. */
+        }
+
+        
+        /*콘텐츠 내용 작성*/
+        #contents {
+            width: 100%;
+            height: 100%;
+            margin: 60px 0 140px 0;
+        }
+        #main_contents {
+            width: 100%;
+            float: left;
+        }
+        #main_text {
+            margin: 260px 0 0 70px;
+            font-size: 300px;
+            font-weight: 800;
+            letter-spacing: -10px;
+            line-height: 300px;
+        }
+        #main_contents p {
+            float: right;
+            margin: 0 60px 0 0;
+            font-size: 700px;
+            font-weight: 350;
+        }
+        /*푸터*/
+        footer {
+            width: 100%;
+            height: 150px;
+            bottom: 0;
+            background-color: black;
+        }
+        #footer_box {
+            width: 100%;
+            height: 150px;
+            margin: 0 auto;
+        }
+        #footer_logo {
+            float: left;
+            margin: 50px 0 0 70px;
+        }
+        #address {
+            float: right;
+            margin: 50px 70px 0 0;
+            color: #FF4800;
+            font-size: 12pt;
+            text-align: right;
+        }
+        table, tr, th, td {
+            border: solid 1px rgb(255, 255, 255);
+            border-collapse: collapse;
+            padding: 8px;
+            margin: auto;
+            color: rgb(38, 38, 38);
+        }
+        #in {
+            font-size: 80px;
+            font-weight: 700;
+            color: #FF4800;
+        }
+        #jw {
+            font-size: 100px;
+            font-weight: 700;
+            color: #FF4800;
+        }
+    </style>
+</head>
+<body class="pretendard">
+    <header>
+        <div id="logo">
+            <a href="index.html" style="font-weight: 800;">Myfriends</a>
+           <!--<img src="img/logo.png">-->
+        </div>
+
+        <nav id="menus">
+        <ul id="main_menu">
+            <li><a href="jeongwoo.html" class="a active" style="font-weight: 700;">jeongwoo</a></li>
+            <li><a href="jaehoon.html" class="a" style="font-weight: 700;">jaehoon</a></li>
+            <li><a href="minji.html" class="a" style="font-weight: 700;">minji</a></li>
+            <li><a href="yunsol.html" class="a" style="font-weight: 700;">yunsol</a></li>
+            <li><a href="gallery.html" class="a" style="font-weight: 700;">gallery</a></li>
+        </ul>
+        </nav>
+    </header>
+    
+    <div class="horizontal-line"></div>
+
+<section id="contents">
+    <div>
+        <table>
+            <tr>
+                <td rowspan="2">
+                    <img src="img/jww.png">
+                </td>
+                <td colspan="2">
+                    <div id="jw">
+                    Kim Jeong Woo
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top;">
+                    이름 : 김정우<br>
+                    생년월일 : 2003.07.08<br>
+                    별명 : 제이더블유무<br>
+                    MBTI : ISFP or ISFJ<br>
+                    인스타 : jwmoo_74<br>
+                    이메일 : wkjnmw@kaywon.ac.kr<br><br>
+
+                    취미 : 노래듣기<br>
+                    좋아하는 것 : 백예린<br>
+                    싫어하는 것 : 불친절한 사람<br><br>
+
+                    초등학교 : 은산초등학교 졸업<br>
+                    중학교 : 은산중학교 졸업<br>
+                    고등학교 : 부여정보고등학교 졸업<br>
+                </td>
+                <td rowspan="3">
+                    <img src="img/jw.png">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div id="in">Introduction</div><br><br>
+                    계원예대에 들어와 친해지게 된 오빠 ‘김정우’<br>
+                    첫 수업날부터 존재감이 뿜뿜 했던 오빠다. 신입생 OT 뒷풀이 자리에서 혜린 언니 덕에 친해졌다.<br>
+                    엄청난 인싸력으로 뒷풀이 자리에서 일어나 춤추던 모습을 아직도 잊지 못한다.<br>
+                    그 후 오빠는 과대, 나는 부과대로 함께 학과 일을 하며 더욱 친해졌다. 재밌고 웃음을 주는 오빠다.<br>
+                    생각이 깊고 긍정적이라 내가 포기할때마다 손을 내밀어 주는 힘이 되는 존재!                    
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<footer>
+    <div id="footer_box">
+        <div id="footer_logo">
+        <img src="img/logo2.png">
+        </div>
+        <ul id="address">
+            <li>디지털미디어디자인과 웹퍼블리싱 직무수행능력평가 2</li>
+            <li>22361024 김연우 | Email : dusdnduswo@naver.com</li>
+            <li>COPYRIGHT &copy; yeonwoo ALL RIGHTS RESERVED</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
